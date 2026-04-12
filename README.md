@@ -1,19 +1,17 @@
 # ISHERL
 Student Management system
 
-<hr>
-
 <br>
 
 <h2>Applicant Dashboard</h2>
-<hr>
+
 <img width="1347" height="672" alt="ISHERL_about" src="https://github.com/user-attachments/assets/f8ed162f-3666-4b2f-9a53-8479ef4d1339" />
 <img width="1299" height="621" alt="ISHERL_login" src="https://github.com/user-attachments/assets/a3b78bfe-67bd-4dad-9e7c-c18d33702e61" />
 <img width="1338" height="651" alt="ISHERL_Applicant_dashboard" src="https://github.com/user-attachments/assets/29fd0013-19b6-4e60-823c-11f976198b8e" />
 <img width="1329" height="662" alt="ISHERL_Applicant_dashboard_courses" src="https://github.com/user-attachments/assets/5d3142e8-2685-4148-a8b1-bb69102ebead" />
 <img width="1350" height="654" alt="ISHERL_Applicant_dashboard_documents" src="https://github.com/user-attachments/assets/1ca81819-3cdb-4e11-a2c4-5b80572c7b56" />
 <img width="1359" height="661" alt="ISHERL_Applicant_dashboard_submitted_docs" src="https://github.com/user-attachments/assets/d8b9dd24-86fe-4b43-bc48-14801e68cfc6" />
-<hr>
+
 <br>
 
 <h2>Student Dashboard</h2>
