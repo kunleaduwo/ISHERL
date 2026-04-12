@@ -1,6 +1,5 @@
 # ISHERL
-Student Management system
-
+Students Information system
 <br>
 <h2>Project Overview</h2>
 
