@@ -2,6 +2,47 @@
 Student Management system
 
 <br>
+<h2>Project Overview</h2>
+
+<p>
+A system designed to simplify and automate the administrative and academic operations of the International Institute of Environmental and Humanitarian Law (ISHERL). The system provides a centralized platform for managing students, applications, applicants, payments, courses, documents, examinations, results, and records efficiently.
+</p>
+
+<p>
+It is built to reduce manual paperwork, improve communication between staff , applicants and students, and ensure accurate record-keeping across all school activities. The system supports role-based access, allowing administrators, lecturers, and students to interact with the platform based on their permissions.
+</p>
+
+<p><strong>Key features of the system include:</strong></p>
+
+<ul>
+  <li>Applicant registration and profile management</li>
+  <li>Student profile management</li>
+  <li>Applicant and Student ID </li>
+  <li>Lecturers and documents management</li>
+  <li>Courses and department allocation</li>
+  <li>Attendance tracking for students and lecturers</li>
+  <li>Examination, grade and results management</li>
+  <li>Timetable and scheduling system</li>
+  <li>Secure data storage and role-based access control</li>
+</ul>
+
+<p>
+By integrating all core ISHERL operations into a single system, this application enhances efficiency, improves data accuracy, and supports better decision-making for ISHERL management team.
+</p>
+
+<h2>Technologies Used</h2>
+
+<ul>
+  <li>Python</li>
+  <li>Django</li>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>JavaScript</li>
+  <li>PostgreSQL</li>
+</ul>
+
+<br>
+<hr>
 
 <h2>Applicant Dashboard</h2>
 
