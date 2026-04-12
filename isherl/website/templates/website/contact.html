@@ -1,0 +1,156 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="heading">
+        <div class="container">
+          {% for header in contactheader %}
+          <div class="row d-flex justify-content-center text-center">
+            <div class="col-lg-8">
+              <h1>{{ header.header_title }}</h1>
+              <p class="mb-0">{{ header.header_description }}</p>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      <nav class="breadcrumbs">
+        <div class="container">
+          <ol>
+            <li><a href="{% url 'website:home' %}">Home</a></li>
+            <li class="current">Contact</li>
+          </ol>
+        </div>
+      </nav>
+    </div><!-- End Page Title -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+      <div class="mb-5" data-aos="fade-up" data-aos-delay="200">
+        <iframe style="border:0; width: 100%; height: 300px;" class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=1215&amp;height=300&amp;hl=en&amp;q=37, Yaounde Street,  Wuse Zone 6, Abuja.&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://embed-googlemap.com"></a></div><style>.mapouter{position:relative;text-align:right;width:1215px;height:300px;}.gmap_canvas {overflow:hidden;background:none!important;width:1215px;height:300px;}.gmap_iframe {width:1400px!important;height:300px!important;}</style></div>
+      </div><!-- End Google Maps -->
+
+      
+        
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              {% for x in contact %}
+              <div>
+                <h3>Address</h3>
+                <p>{{ x.address_one }}</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Call Us</h3>
+                <p>{{ x.phone_one }}</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Email Us</h3>
+                <p>{{ x.email_one }}</p>
+              </div>
+              
+            </div><!-- End Info Item -->
+
+          </div>
+
+          <div class="col-lg-8">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                </div>
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                </div>
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+    <section>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h3>{{ x.name}}</h3>
+        <div class="card-group">
+         <div class="card">
+      
+      <div class="card-body">
+        <h5 class="card-title">{{ x.office_two }}</h5>
+        <p class="card-text">{{ x.address_two }}</p>
+        <p class="card-text">{{ x.phone_two }}</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">{{ x.email_two }}</small>
+      </div>
+    </div>
+    <div class="card">
+      
+      <div class="card-body">
+        <h5 class="card-title">{{ x.office_three }}</h5>
+        <p class="card-text">{{ x.address_three }}</p>
+        <p class="card-text">{{ x.phone_three }}</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">{{ x.email_three }}</small>
+      </div>
+    </div>
+    <div class="card">
+      
+      <div class="card-body">
+        <h5 class="card-title">{{ x.office_four }}</h5>
+        <p class="card-text">{{ x.address_four }}</p>
+        <p class="card-text">{{ x.phone_four }}</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">{{ x.email_four }}</small>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</h1>
+
+    </section>
+
+
+ 
+
+    
+    
+
+{% endblock %}

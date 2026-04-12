@@ -1,0 +1,291 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="heading">
+        <div class="container">
+          <div class="row d-flex justify-content-center text-center">
+            {% for about in aboutus %}
+            <div class="col-lg-8">
+              <h1>{{about.title}}<br></h1>
+              <p class="mb-0">{{about.description}}</p>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+      <nav class="breadcrumbs">
+        <div class="container">
+          <ol>
+            <li><a href="{% url 'website:home' %}">Home</a></li>
+            <li class="current">About Us<br></li>
+          </ol>
+        </div>
+      </nav>
+    </div><!-- End Page Title -->
+
+    <!-- About Us Section -->
+    <section id="about-us" class="section about-us">
+
+      <div class="container">
+
+        <div class="row gy-4">
+          {% for about_section in section_two %}
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="100">
+            <img src="{{about_section.about_page_image.url}}" class="img-fluid" alt="">
+            
+          </div>
+          
+          <div class="col-lg-6 order-2 order-lg-1 content" data-aos="fade-up" data-aos-delay="200">
+            <h3>{{about_section.title}}</h3>
+            <p class="fst-italic">{{about_section.description}}</p>
+            {% comment %} <ul>
+              <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
+            </ul> {% endcomment %}
+          </div>
+          {% endfor %}
+
+        </div>
+
+      </div>
+
+    </section><!-- /About Us Section -->
+    
+
+   
+
+        <!-- Extra info About us Section -->
+    <section id="about-us" class="section about-us">
+
+      <div class="container">
+
+        <div class="row gy-4">
+        {% for about_section_three in section_three %}
+          <div class="col-lg-6 order-2 order-lg-2 content" data-aos="fade-up" data-aos-delay="200">
+            <h3>{{about_section_three.title}}</h3>
+            <p class="fst-italic">{{about_section_three.description}}</p>
+            {% comment %} <ul>
+              <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
+            </ul> {% endcomment %}
+          </div>
+
+          <div class="col-lg-6 order-1 order-lg-1" data-aos="fade-up" data-aos-delay="100">
+            <img src="{{about_section_three.about_page_image_two.url}}" class="img-fluid" alt="">
+          </div>
+          {% endfor %}
+
+          
+
+        </div>
+
+      </div>
+
+    </section><!-- /About Us Section -->
+
+
+
+    <!-- About Us Section -->
+    <section id="about-us" class="section about-us">
+
+      <div class="container">
+
+        <div class="row gy-4">
+        {% for about_section_four in section_four %}
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="100">
+            <img src="{{about_section_four.about_page_image_three.url}}" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-6 order-2 order-lg-1 content" data-aos="fade-up" data-aos-delay="200">
+            <h3>{{about_section_four.title}}</h3>
+            <p class="fst-italic">{{about_section_four.description}}</p>
+            {% endfor %}
+            {% comment %} <ul>
+              <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
+            </ul> {% endcomment %}
+          </div>
+
+        </div>
+      </div>
+      </section><!-- /About Us Section -->
+
+
+    <!-- The four cards Section -->
+    <section id="pricing" class="pricing section">
+
+      <div class="container">
+        <div class="align-content-md-center">
+        <h4>ISHERL A unique collection of classical, pedagogic, innovative and catalytic approaches.</h4>
+        <p>The Institute maintains robust and efficient research mechanisms for all of its members in research sector, and for interesting and accepted members of the public.</p>
+        </div>
+        <div class="row gy-3">
+      {% for five in section_five %}
+          <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="pricing-item">
+              <h2>{{five.subtitle_one}}</h2>
+              <p>{{five.description_one}}</p>
+             
+            </div>
+          </div><!-- End card one section -->
+
+          <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="pricing-item">
+              <h2>{{five.subtitle_two}}</h2> 
+              <p>{{five.description_two}}</p>
+            </div>
+          </div><!-- End card two -->
+
+          <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="pricing-item">
+              <h2>{{five.subtitle_three}}</h2>
+              <p>{{five.description_three}}</p>
+            </div>
+          </div><!-- End card three -->
+
+          <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="pricing-item">
+              {% comment %} <span class="advanced">Advanced</span> {% endcomment %}
+              <h2>{{five.title}}</h2>
+              <p>{{five.description}}</p>
+            </div>
+          </div><!-- End card four -->
+        </div>
+      </div>
+    </section><!-- /The four cards Section -->
+
+    {% endfor %}
+
+    
+
+
+      <!-- About Slider Section -->
+    <section id="testimonials" class="testimonials section">
+
+      <!-- Section Title -->
+    
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 40
+                },
+                "1200": {
+                  "slidesPerView": 2,
+                  "spaceBetween": 20
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="">
+                  {% comment %} <img src="{% static 'assets/img/testimonials/testimonials-1.jpg' %}" class="testimonial-img" alt=""> {% endcomment %}
+                  <h2>Best Consultancy Services</h2>
+                  {% comment %} <h4>Ceo &amp; Founder</h4> {% endcomment %}
+                  <p>
+                    <span>ISHERL increasingly identifies, analyzes and proposes practical solutions to a broad range of legal, technical, operational and multidimensional issues affecting humanity, governance, 
+                      policy, and its functions related projects.</span>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End About Slider item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="">
+                  {% comment %} <img src="{% static 'assets/img/testimonials/testimonials-2.jpg' %}" class="testimonial-img" alt=""> {% endcomment %}
+                  <h2>Research Programmes</h2>
+                  {% comment %} <h4>Designer</h4> {% endcomment %}
+                  
+                  <p>
+                    
+                    <span>ISHERL represent a spectrum of approaches from the level of creative visions, reform advocacy and creative problem-solving through training and education programs down to
+                       legal development and actual implementation of programs.</span>
+                    
+                  </p>
+                </div>
+              </div>
+            </div><!-- End About Slider item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="">
+                  {% comment %} <img src="{% static 'assets/img/testimonials/testimonials-3.jpg' %}" class="testimonial-img" alt=""> {% endcomment %}
+                  <h2>Educational & Advocacy</h2>
+                  {% comment %} <h4>Store Owner</h4> {% endcomment %}
+                  
+                  <p>
+                   
+                    <span>Educational training and programmes offered at ISHERL can prepare you to pursue interest and career in environmental law, humanitarian law, human rights, environmental systems, humanitarian and environmental journalism, environmental education, environmental information system, through unique collection of classical, pedagogic, innovative and catalytic approaches. The Institute maintains robust and efficient research mechanisms for all of its members in research sector,
+                       and for interesting members of the public.</span>
+                   
+                  </p>
+                </div>
+              </div>
+            </div><!-- End About Slider item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="">
+                  {% comment %} <img src="{% static 'assets/img/testimonials/testimonials-4.jpg' %}" class="testimonial-img" alt=""> {% endcomment %}
+                  <h2>Intellectual Development</h2>
+                  {% comment %} <h4>Freelancer</h4> {% endcomment %}
+                  <p>
+                    <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End About Slider item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="">
+                  {% comment %} <img src="{% static 'assets/img/testimonials/testimonials-5.jpg' %}" class="testimonial-img" alt=""> {% endcomment %}
+                  <h2>Protection of Environment, Human and People’s Rights</h2>
+                  {% comment %} <h4>Entrepreneur</h4> {% endcomment %}
+                  <p>
+                    <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
+                    
+                  </p>
+                </div>
+              </div>
+            </div><!-- End About Slider item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- End About Slider Section --> 
+
+    
+      
+
+
+    {% endblock %}
