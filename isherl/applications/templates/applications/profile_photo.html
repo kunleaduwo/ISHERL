@@ -1,0 +1,23 @@
+{% extends "dashboard/applicant_dashboard.html" %}
+{% load static %}
+
+{% block dashboard_content %}
+
+<h2>Upload / Update Profile Photo</h2>
+
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <div class="mb-3">
+        {% if profile.photo %}
+            <img src="{{ profile.photo.url }}" alt="Profile Photo" width="150">
+        {% else %}
+            <p>No profile photo uploaded yet.</p>
+        {% endif %}
+    </div>
+    <div class="mb-3">
+        <input type="file" name="photo" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-primary">Upload Photo</button>
+</form>
+
+{% endblock %}

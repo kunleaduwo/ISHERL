@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Application Status</h2>
+
+{% if application %}
+    <p>Full Name: {{ application.full_name }}</p>
+    <p>Email: {{ application.email }}</p>
+    <p>Status: {{ application.get_status_display }}</p>
+    <p>Paid: {{ application.is_paid }}</p>
+{% else %}
+    <p>You have not submitted an application yet.</p>
+{% endif %}
+
+<a href="{% url 'applications:apply' %}">Edit Application</a>
+{% endblock %}
