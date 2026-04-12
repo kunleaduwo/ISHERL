@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{% block title %}{% endblock %}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <script defer src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="shortcut icon" type="image/png" href="{% static '../assets/images/logos/favicon.png' %}" />
+  <link rel="stylesheet" href="{% static '../assets/css/styles.min.css' %}" />
+  
+  
+  {% block extra_media %}{% endblock %}
+</head>
+<body>
+  <div class="container form-control w-75 fs-5 fw-bold" style="color: #022179;">
+    <h1 style="text-align: left; color: #022179;" class="fw-bolder fst-normal fs-5">ISHERL</h1>
+    
+
+  {% block content_wrapper %}
+    <div class="container">
+      {% block content %}{% endblock %}
+    </div>
+  {% endblock %}
+</body>
+</html>

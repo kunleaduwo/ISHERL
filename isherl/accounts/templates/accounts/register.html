@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+
+
+
+
+
+{% block content %}
+<br>
+<br>
+<br>
+
+
+<div class="container form-control w-50 fs-6 fw-bold" style="color: #022179; background-color: #6082B6;">
+<br>
+<hr>
+<h1 style="text-align: center; color: #022179;" class="fw-bold fst-normal fs-1">Register</h1>
+
+
+<hr>
+<br>
+
+<form method="post" action="{% url 'accounts:register' %}">
+    {% csrf_token %}
+    
+    {{ form|crispy }}
+    
+
+    <div class="d-grid gap-2 col-6 mx-auto">
+    <button class="btn btn-dark" type="submit">Register</button>
+</div>
+<br>
+<br>
+</form>
+
+<p>
+    
+    Already have an account?
+    <a href="{% url 'applications:dashboard' %}" class="text-white">Login here</a>
+</p>
+
+
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br><br>
+
+
+{% endblock %}
