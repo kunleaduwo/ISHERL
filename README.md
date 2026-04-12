@@ -15,7 +15,6 @@ Student Management system
 <br>
 
 <h2>Student Dashboard</h2>
-<hr>
 <img width="1332" height="613" alt="ISHERL_Student_dashboard_documents" src="https://github.com/user-attachments/assets/5704c6bd-e861-4ada-93ad-868d38ee768f" />
 <img width="1317" height="647" alt="ISHERL_Student_dashboard_documents2" src="https://github.com/user-attachments/assets/fd1129a4-ace3-45a6-8693-a1b8e276fee3" />
 <img width="1317" height="586" alt="ISHERL_Student_results" src="https://github.com/user-attachments/assets/41af2556-4192-4b52-9b05-d74c690cbc2c" />
