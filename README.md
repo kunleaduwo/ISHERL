@@ -34,10 +34,10 @@ By integrating all core ISHERL operations into a single system, this application
 <ul>
   <li>Python</li>
   <li>Django</li>
-  <li>HTML</li>
-  <li>CSS</li>
-  <li>JavaScript</li>
   <li>PostgreSQL</li>
+  <li>JavaScript</li>
+  <li>CSS</li>
+  <li>HTML</li>
 </ul>
 
 <br>
