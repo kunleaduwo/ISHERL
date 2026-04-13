@@ -4,7 +4,7 @@ Student Portal with Role-Based Access & Performance Tracking
 <h2>Project Overview</h2>
 
 <p>
-A system designed to simplify and automate the administrative and academic operations of the International Institute of Environmental and Humanitarian Law (ISHERL). The system provides a centralized platform for managing students, applications, applicants, payments, courses, documents, examinations, results, and records efficiently.
+A system designed to simplify and automate the administrative and academic operations of International Institute of Environmental and Humanitarian Law (ISHERL). The system provides a centralized platform for managing students, applications, applicants, payments, courses, documents, examinations, results, and records efficiently.
 </p>
 
 <p>
