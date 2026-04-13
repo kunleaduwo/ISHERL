@@ -1,5 +1,5 @@
 # ISHERL
-Students Information system
+Student Portal with Role-Based Access & Performance Tracking
 <br>
 <h2>Project Overview</h2>
 
