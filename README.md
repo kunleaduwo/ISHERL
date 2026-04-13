@@ -1,4 +1,4 @@
-# ISHERL
+# ISHERL EduPortal
 Student Portal System
 <br>
 <h2>Project Overview</h2>
